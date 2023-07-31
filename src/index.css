@@ -17,3 +17,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.footerLinkGroup h1{
+  padding-bottom: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+.footerLinkGroup p{
+  padding: 3px 0;
+  font-weight: 300
+}
