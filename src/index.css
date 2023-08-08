@@ -29,3 +29,17 @@ code {
 .footerLinkGroup p{
   @apply font-light p-1 text-sm md:text-base
 }
+.category-icon:hover .image-div .image-layer{
+  background-color: rgba(255, 0, 0, 0.6);
+  transition: all 0.4s;
+}
+.category-icon:hover .category-text{
+  transform: translateY(-90px);
+  transition: all 0.4s;
+}
+.category-icon:hover .category-text p{
+  font-size: large;
+  font-weight: 500;
+  transition: all 0.4s;
+  color: white;
+}

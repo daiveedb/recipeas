@@ -1,96 +1,108 @@
+import vegan from "./projectSvgs/vegan.jpg"
+import african from "./projectSvgs/african.jpg"
+import chinese from "./projectSvgs/chinese.jpg"
+import italian from "./projectSvgs/italian.jpg"
+import dessert from "./projectSvgs/dessert.jpg"
+import main from "./projectSvgs/main.jpg"
+import appetizer from "./projectSvgs/appetizer.jpg"
+import soups from "./projectSvgs/soups.jpg"
+import salad from "./projectSvgs/salad.jpg"
+import snack from "./projectSvgs/snack.jpg"
+import bread from "./projectSvgs/bread.jpg"
+import lactose from "./projectSvgs/lactose.jpg"
+import sidedish from "./projectSvgs/sidedish.jpg"
+import drinks from "./projectSvgs/drinks.jpg"
+import breakfast from "./projectSvgs/breakfast.jpg"
 
-
-
-
-const categories = [
+export const categories = [
     {
         categoryId:1,
         categoryName:"Vegan",
-        categoryImageUrl:"",
+        categoryImageUrl:vegan,
         categoryCallUrl:"",
     },
     {
         categoryId:2,
         categoryName:"African",
-        categoryImageUrl:"",
+        categoryImageUrl:african,
         categoryCallUrl:"",
     },
     {
         categoryId:3,
         categoryName:"Chinese",
-        categoryImageUrl:"",
+        categoryImageUrl:chinese,
         categoryCallUrl:"",
     },
     {
         categoryId:4,
         categoryName:"Italian",
-        categoryImageUrl:"",
+        categoryImageUrl:italian,
         categoryCallUrl:"",
     },
     {
         categoryId:5,
         categoryName:"Desert",
-        categoryImageUrl:"",
+        categoryImageUrl:dessert,
         categoryCallUrl:"",
     },
     {
         categoryId:6,
         categoryName:"Main Course",
-        categoryImageUrl:"",
+        categoryImageUrl:main,
         categoryCallUrl:"",
     },
     {
         categoryId:7,
         categoryName:"Appetizers",
-        categoryImageUrl:"",
+        categoryImageUrl:appetizer,
         categoryCallUrl:"",
     },
     {
         categoryId:8,
         categoryName:"Soups",
-        categoryImageUrl:"",
+        categoryImageUrl:soups,
         categoryCallUrl:"",
     },
     {
         categoryId:9,
         categoryName:"Salad",
-        categoryImageUrl:"",
+        categoryImageUrl:salad,
         categoryCallUrl:"",
     },
     {
         categoryId:10,
         categoryName:"Lactose Intolerant",
-        categoryImageUrl:"",
+        categoryImageUrl:lactose,
         categoryCallUrl:"",
     },
     {
         categoryId:11,
         categoryName:"Bread & pastries",
-        categoryImageUrl:"",
+        categoryImageUrl:bread,
         categoryCallUrl:"",
     },
     {
         categoryId:12,
         categoryName:"Side Meals",
-        categoryImageUrl:"",
+        categoryImageUrl:sidedish,
         categoryCallUrl:"",
     },
     {
         categoryId:13,
         categoryName:"Breakfast",
-        categoryImageUrl:"",
+        categoryImageUrl:breakfast,
         categoryCallUrl:"",
     },
     {
         categoryId:14,
         categoryName:"Snacks",
-        categoryImageUrl:"",
+        categoryImageUrl:snack,
         categoryCallUrl:"",
     },
     {
         categoryId:15,
         categoryName:"Drinks",
-        categoryImageUrl:"",
+        categoryImageUrl:drinks,
         categoryCallUrl:"",
     },
 ]
