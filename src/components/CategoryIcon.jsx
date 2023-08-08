@@ -8,9 +8,11 @@ const CategoryIcon = ({category}) => {
   const navigate = useNavigate()
 
   return (
-    <div onClick={() => navigate(`/categories/${category.categoryName}`,{state:{category}})} className='w-[250px] cursor-pointer category-icon hover:scale-105 transition-all'>
-        <div className='image-div w-full h-[250px] relative'>
-            <LazyLoadImage width={250} height={250} placeholderSrc={Placeholder} 
+    <div onClick={() => navigate(`/categories/${category.categoryName}`,{state:{category}})} className='w-[150px] sm:w-[200px] xl:w-[250px] cursor-pointer category-icon hover:scale-105 transition-all'>
+        <div className='image-div w-full h-[150px] sm:h-[200px] xl:h-[250px] relative'>
+            <img 
+            loading='lazy'
+            placeholder={Placeholder}
             className='w-full h-full rounded-[50%] object-cover' 
             src={category.categoryImageUrl} 
             alt="a food dish" />
