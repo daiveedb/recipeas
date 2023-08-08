@@ -1,5 +1,5 @@
 import vegan from "./projectSvgs/vegan.jpg"
-import african from "./projectSvgs/african.jpg"
+import african from "./projectSvgs/africanS.jpeg"
 import chinese from "./projectSvgs/chinese.jpg"
 import italian from "./projectSvgs/italian.jpg"
 import dessert from "./projectSvgs/dessert.jpg"
@@ -13,6 +13,7 @@ import lactose from "./projectSvgs/lactose.jpg"
 import sidedish from "./projectSvgs/sidedish.jpg"
 import drinks from "./projectSvgs/drinks.jpg"
 import breakfast from "./projectSvgs/breakfast.jpg"
+import Placeholder from "./projectSvgs/food-placeholder.jpg"
 
 export const categories = [
     {
