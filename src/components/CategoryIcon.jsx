@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Placeholder from '../projectSvgs/food-placeholder.jpg'
+import { useNavigate } from 'react-router-dom'
 
 const CategoryIcon = ({category}) => {
 
+  const navigate = useNavigate()
+
   return (
-    <div className='w-[250px] cursor-pointer category-icon hover:scale-105 transition-all'>
+    <div onClick={() => navigate(`/categories/${category.categoryName}`,{state:{category}})} className='w-[250px] cursor-pointer category-icon hover:scale-105 transition-all'>
         <div className='image-div w-full h-[250px] relative'>
             <LazyLoadImage width={250} height={250} placeholderSrc={Placeholder} 
             className='w-full h-full rounded-[50%] object-cover' 
