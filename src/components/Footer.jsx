@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex flex-col lg:flex-row gap-16 justify-between mb-10'> 
             <div className='flex-1'>
                 <h1 className='text-4xl font-pacifico font-semibold italic pb-10 text-black'>ReciPeas</h1>
-                <p className='w-[90%] text-sm sm:text-base lg:w-[70%]'>"I don't live off that hope shit, I wish the water was cold. I wish the instructors keep on running. I wish for the rain. When the ending is unkown. And the distance is unknown. That's when you know who you are. Stay hard"</p>
+                <p className='w-[90%] text-sm sm:text-base lg:w-[70%]'>"I don't live off that hope shit, I wish the water was cold. I wish the instructors keep on running. I wish for the rain. When the ending is unkown. And the distance is unknown. That's when you know who you are. Stay hard" ~ David Goggins</p>
             </div>
             <div className='flex-1'>
                 <div className='w-[95%] md:w-[80%] lg:mx-auto flex justify-between items-start'>
