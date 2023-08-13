@@ -48,7 +48,9 @@ code {
   transition: all 0.4s;
   color: white;
 }
-
+.categories-snippet:hover .see-more-div{
+  @apply text-brightOrange
+}
 /* Sliding Text */
 
 .scrolling-text p{
