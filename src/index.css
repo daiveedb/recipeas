@@ -49,7 +49,7 @@ code {
   color: white;
 }
 .categories-snippet:hover .see-more-div{
-  @apply text-brightOrange
+  @apply text-darkGray
 }
 /* Sliding Text */
 
