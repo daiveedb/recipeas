@@ -14,7 +14,7 @@ const CategoriesSnippet = () => {
         <div className='grid grid-cols-3 justify-items-center lg:grid-cols-6 sm:px-10 xl:px-20'>
             {
                 categoriesSnippet.map((category) => {
-                    return <CatetegorySmallIcon key={category.id} category={category}/>
+                    return <CatetegorySmallIcon key={category.categoryId} category={category}/>
                 })
             }
         </div>
