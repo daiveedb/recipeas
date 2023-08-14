@@ -43,9 +43,9 @@ const Carousel = () => {
     // useEffect(()=> GetCarouselRecipes,[])
 
   return (
-    <div className="px-32">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
         <div className='bg-white border border-b-0 w-full p-2 text-black rounded-t-lg'>
-            <p className='text-center font-semibold tracking-wide'>Good Morning, Breakfast Ideas?</p>
+            <p className='text-center text-sm sm:text-base font-semibold tracking-wide'>Good Morning, Breakfast Ideas?</p>
         </div>
         <div className='w-full rounded-b-lg'>
             {
