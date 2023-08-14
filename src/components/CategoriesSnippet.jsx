@@ -19,7 +19,7 @@ const CategoriesSnippet = () => {
             }
         </div>
         <div className='pb-7 px-20 see-more-div text-lightGray'>
-            <div onClick={() => navigate('/categories')} className='mx-auto w-[150px] py-3 border border-transparent hover:border-lightBlue rounded-lg cursor-pointer flex items-center justify-center transition-all'>
+            <div onClick={() => navigate('/categories')} className='mx-auto w-[150px] py-3 border border-transparent hover:border-darkGray rounded-lg cursor-pointer flex items-center justify-center transition-all'>
                 <p className='mr-3'>See More</p> 
                 <span><AiOutlineRight/></span>
             </div>

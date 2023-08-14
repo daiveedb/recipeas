@@ -16,7 +16,12 @@ const Carousel = () => {
             summary:"Get the best banana bread all withing less than an hour from when you start cooking. Get the full information on how to prepare this amazing meal when you click on the button below. What are you waiting for nigaaaaaa "
         }
     ])
-    const [isCarouselLoading, setIsCarouselLoading] = useState(false)
+    const [isCarouselLoading, setIsCarouselLoading] = useState(true)
+
+    const [hourOfDay, setHourOfDay] = useState()
+    const [message, setMessage] = useState("")
+    const [url, setUrl] = useState("")
+
 
     const settings = {
         dots: false,
@@ -28,31 +33,62 @@ const Carousel = () => {
         autoplaySpeed: 5000, // set autoplay speed to 5 seconds
       };
 
-    const apiKey = "dd5446f6f07c4707a6f376ea217c7740"
-    let url = "https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740"
 
-
-
-    const GetCarouselRecipes = async () => {
-        const result = await axios.get(url)
-        console.log(result.data.recipes);
-        setCarouselList(result.data.recipes);
-        setIsCarouselLoading(false)
+    const renderBasedOnTime = () => {
+        if (hourOfDay >= 4 && hourOfDay < 12){
+            setMessage("Good Morning there, Breakfast Ideas?")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+        }
+        else if (hourOfDay >= 12 && hourOfDay < 18) {
+            setMessage("It's Lunch Time, Try one of these")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+        }
+        else if (hourOfDay >= 18 && hourOfDay < 23) {
+            setMessage("Prepped for Dinner?, Check these Out")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+        }
+        else if (hourOfDay >= 23 || hourOfDay < 4) {
+            setMessage("Late Night Snack Huh? You'd Love these")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+        }
     }
 
-    // useEffect(()=> GetCarouselRecipes,[])
+    const getCarouselRecipes = async () => {
+        if (url){
+            const result = await axios.get(url)
+            console.log(result.data.recipes);
+            setCarouselList(result.data.recipes);
+            setIsCarouselLoading(false)
+        }
+    }
+    useEffect(() => {
+        const date = new Date()
+        let time = date.getTime()
+        let timezone = date.getTimezoneOffset()
+        let timeDifference = timezone / 60
+        let hoursSinceOrigin = Math.floor(time / 3600000)
+        let hourOfDay = (hoursSinceOrigin % 24) - timeDifference
+        setHourOfDay(hourOfDay)
+    },[])
+
+    useEffect(() => {
+        renderBasedOnTime()
+    },[hourOfDay])
+
+    useEffect(() => {
+        getCarouselRecipes()
+    }
+    ,[url])
 
   return (
     <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
         <div className='bg-white border border-b-0 w-full p-2 text-black rounded-t-lg'>
-            <p className='text-center text-sm sm:text-base font-semibold tracking-wide'>Good Morning, Breakfast Ideas?</p>
+            <p className='text-center text-sm sm:text-base font-semibold tracking-wide'>{message}</p>
         </div>
         <div className='w-full rounded-b-lg'>
             {
                 isCarouselLoading ? 
-                <div className='w-full bg-slate-300 h-[500px]'>
-
-                </div>
+                <div className='w-full bg-slate-300 h-[500px]'></div>
                 :
                 <Slider {...settings}>
                 {carouselList.map((item) => {
