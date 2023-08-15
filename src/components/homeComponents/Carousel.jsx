@@ -45,7 +45,7 @@ const Carousel = () => {
         }
         else if (hourOfDay >= 18 && hourOfDay < 23) {
             setMessage("Prepped for Dinner?, Check these Out")
-            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=maincourse&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=main course&apiKey=dd5446f6f07c4707a6f376ea217c7740")
         }
         else if (hourOfDay >= 23 || hourOfDay < 4) {
             setMessage("Late Night Snack Huh? You'd Love these")
@@ -56,7 +56,7 @@ const Carousel = () => {
     const getCarouselRecipes = async () => {
         if (url){
             const result = await axios.get(url)
-            console.log(result.data.recipes);
+            console.log("result:" ,result.data.recipes);
             setCarouselList(result.data.recipes);
             setIsCarouselLoading(false)
         }

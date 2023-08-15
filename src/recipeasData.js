@@ -106,3 +106,21 @@ export const categories = [
         categoryCallUrl:"",
     },
 ]
+
+export const collections = [
+    {
+        id:1,
+        title: 'Ready in 30 minutes',
+        url:"https://api.spoonacular.com/recipes/complexSearch?query=pasta&limitLicense=true&number=1&maxReadyTime=30&sort=time&sortDirection=asc&apiKey=dd5446f6f07c4707a6f376ea217c7740"
+    },
+    {
+        id:2,
+        title: 'Gluten Free',
+        url:""
+    },
+    {
+        id:3,
+        title: 'Rice Rice Baby',
+        url:""
+    },
+]
