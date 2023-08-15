@@ -23,7 +23,7 @@ const Carousel = () => {
     const [url, setUrl] = useState("")
 
 
-    const settings = {
+    const carouselSettings = {
         dots: false,
         infinite: true,
         speed: 500,
@@ -41,15 +41,15 @@ const Carousel = () => {
         }
         else if (hourOfDay >= 12 && hourOfDay < 18) {
             setMessage("It's Lunch Time, Try one of these")
-            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=appetizer&apiKey=dd5446f6f07c4707a6f376ea217c7740")
         }
         else if (hourOfDay >= 18 && hourOfDay < 23) {
             setMessage("Prepped for Dinner?, Check these Out")
-            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=maincourse&apiKey=dd5446f6f07c4707a6f376ea217c7740")
         }
         else if (hourOfDay >= 23 || hourOfDay < 4) {
             setMessage("Late Night Snack Huh? You'd Love these")
-            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=breakfast&apiKey=dd5446f6f07c4707a6f376ea217c7740")
+            setUrl("https://api.spoonacular.com/recipes/random?limitLicense=true&number=1&tags=snack,dessert&apiKey=dd5446f6f07c4707a6f376ea217c7740")
         }
     }
 
@@ -90,7 +90,7 @@ const Carousel = () => {
                 isCarouselLoading ? 
                 <div className='w-full bg-slate-300 h-[500px]'></div>
                 :
-                <Slider {...settings}>
+                <Slider {...carouselSettings}>
                 {carouselList.map((item) => {
                     return <CarouselItem key={item.title} item = {item}/>
                 })}
