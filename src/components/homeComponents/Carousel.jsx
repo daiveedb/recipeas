@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import CarouselItem from './CarouselItem';
-import breakfast from "../projectSvgs/breakfast.jpg"
+import breakfast from "../../projectSvgs/breakfast.jpg"
 
 const Carousel = () => {
 

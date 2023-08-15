@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {categories} from "../recipeasData"
+import {categories} from "../../recipeasData"
 import CategoryIcon from './CategoryIcon'
 
 const CategoriesGrid = () => {

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import Placeholder from '../projectSvgs/food-placeholder.jpg'
+import Placeholder from '../../projectSvgs/food-placeholder.jpg'
 import { useNavigate } from 'react-router-dom'
 
 const CategoryIcon = ({category}) => {

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
-import PageHeader from '../components/PageHeader'
-import CategoriesGrid from '../components/CategoriesGrid'
-import Footer from '../components/Footer'
+import PageHeader from '../components/utilityComponents/PageHeader'
+import CategoriesGrid from '../components/categoryComponents/CategoriesGrid'
+import Footer from '../components/utilityComponents/Footer'
 
 const Categories = () => {
 
