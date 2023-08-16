@@ -32,7 +32,7 @@ const NewsLetter = () => {
                 value={email}
                 type = "email"
                 required />
-                <button className='bg-darkGray hover:bg-brightOrange transition-all text-white py-[13px] px-7 rounded-r-md' type='submit'>Join</button>
+                <button className='bg-darkGray hover:bg-brightOrange transition-all text-white py-[13px] px-4 sm:px-7 rounded-r-md' type='submit'>Join</button>
             </form>
         </div>
     </div>
