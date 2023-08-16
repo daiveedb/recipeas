@@ -5,6 +5,7 @@ import SlidingJokes from '../components/utilityComponents/SlidingJokes'
 import CategoriesSnippet from '../components/homeComponents/CategoriesSnippet'
 import Carousel from '../components/homeComponents/Carousel'
 import Collections from '../components/homeComponents/Collections'
+import NewsLetter from '../components/homeComponents/NewsLetter'
 
 const Home = () => {
   return (
@@ -12,8 +13,9 @@ const Home = () => {
         <Navbar/>
         {/* <Carousel/> */}
         {/* <Collections/> */}
-        <CategoriesSnippet/>
         <SlidingJokes/>
+        <CategoriesSnippet/>
+        <NewsLetter/>
         <Footer/>
     </div>
   )
