@@ -19,7 +19,7 @@ export const categories = [
         categoryId:1,
         categoryName:"Vegan",
         categoryImageUrl:vegan,
-        categoryCallUrl:"",
+        categoryCallUrl:"https://api.spoonacular.com/recipes/complexSearch?limitLicense=true&diet=vegan&number=2&instructionsRequired=true&fillIngredients=true&apiKey=dd5446f6f07c4707a6f376ea217c7740",
     },
     {
         categoryId:2,
