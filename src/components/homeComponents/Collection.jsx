@@ -29,10 +29,12 @@ const Collection = ({item}) => {
             <div className='bg-gray-400 w-full'>
             </div>
             :
-            <div className='flex justify-between items-center overflow-x-scroll py-10'>
-                {collectionList.map((item) => {
-                    return <RecipeBox item = {item}/>
-                })}
+            <div className='overflow-x-scroll pt-10 pb-3 w-full collection-scrollable'>
+                <div className='flex items-center w-[130vw]'>
+                    {collectionList.map((item) => {
+                        return <RecipeBox item = {item}/>
+                    })}
+                </div>
             </div>
         }
     </div>

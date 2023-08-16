@@ -56,7 +56,6 @@ const Carousel = () => {
     const getCarouselRecipes = async () => {
         if (url){
             const result = await axios.get(url)
-            console.log("result:" ,result.data.recipes);
             setCarouselList(result.data.recipes);
             setIsCarouselLoading(false)
         }
