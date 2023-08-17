@@ -4,13 +4,13 @@ import animationData from "../../projectSvgs/animation_lldygtrm.json"
 
 const PreLoader = () => {
   return (
-    <div className='flex justify-center items-center w-[20%] m-auto mb-16'>
+    <div className='flex justify-center items-center w-[50%] m-auto mb-16'>
         <Lottie 
         animationData={animationData} 
         loop={true} 
         autoPlay={true} 
-        width={70} 
-        height={70} />
+        width={100} 
+        height={100} />
   </div>
   )
 }

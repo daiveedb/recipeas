@@ -30,12 +30,14 @@ const CategoryPage = () => {
   return (
     <div>
         <PageHeader header={state.categoryName} />
-        {/* {
+        {
           isLoading?
-          <PreLoader/>
+          <div className='py-60'>
+            <PreLoader/>
+          </div>
           :
           <CategoryPageGrid recipesList = {recipesList}/>
-        } */}
+        }
         <Footer/>
         
     </div>
