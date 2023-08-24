@@ -16,15 +16,16 @@ const CategoryPage = () => {
     const getCategoryRecipes = async() => {
       const response = await axios.get(state.categoryCallUrl)
       const result = response.data.results;
-      console.log(result);
+      // console.log(result);
       setRecipesList(result)
       setIsLoading(false)
     }
 
 
-    // useEffect(() => {
-    //   getCategoryRecipes()
-    // },[])
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      getCategoryRecipes()
+    },[])
 
 
   return (
