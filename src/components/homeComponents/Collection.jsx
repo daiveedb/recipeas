@@ -39,7 +39,7 @@ const Collection = ({item}) => {
     },[])
 
   return (
-    <div className='px-0 xl:px-10 w-full relative'>
+    <div className='px-0 xl:px-10 mb-8 w-full relative'>
         <h4 className='text-center sm:text-left text-lg md:text-2xl font-quickSand font-semibold'>{item.title}</h4>
         {
             isLoading? 

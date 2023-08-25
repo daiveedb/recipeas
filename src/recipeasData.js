@@ -19,7 +19,7 @@ export const categories = [
         categoryId:1,
         categoryName:"Vegan",
         categoryImageUrl:vegan,
-        categoryCallUrl:"https://api.spoonacular.com/recipes/complexSearch?limitLicense=true&diet=vegan&number=15&instructionsRequired=true&fillIngredients=true&apiKey=dd5446f6f07c4707a6f376ea217c7740",
+        categoryCallUrl:"https://api.spoonacular.com/recipes/complexSearch?limitLicense=true&diet=vegan&number=1&instructionsRequired=true&fillIngredients=true&apiKey=dd5446f6f07c4707a6f376ea217c7740",
     },
     {
         categoryId:2,
@@ -111,12 +111,12 @@ export const collections = [
     {
         id:1,
         title: 'Ready in 30 minutes',
-        url:"https://api.spoonacular.com/recipes/complexSearch?query=pasta&limitLicense=true&number=6&maxReadyTime=30&sort=time&sortDirection=asc&apiKey=dd5446f6f07c4707a6f376ea217c7740"
+        url:"https://api.spoonacular.com/recipes/complexSearch?query=pasta&limitLicense=true&number=6&maxReadyTime=30&sort=time&fillIngredients=true&sortDirection=asc&apiKey=dd5446f6f07c4707a6f376ea217c7740"
     },
     {
         id:2,
         title: 'Gluten Free',
-        url:""
+        url:"https://api.spoonacular.com/recipes/complexSearch?query=food&limitLicense=true&number=6&fillIngredients=true&intolerances=gluten&apiKey=dd5446f6f07c4707a6f376ea217c7740"
     },
     {
         id:3,

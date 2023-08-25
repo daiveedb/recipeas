@@ -11,7 +11,7 @@ const Categories = () => {
 
   return (
     <div>
-      <PageHeader header = 'Recipeas Categories'/>
+      <PageHeader header = 'Recipeas Categories' links={true}/>
       <CategoriesGrid/>
       <Footer/>
     </div>

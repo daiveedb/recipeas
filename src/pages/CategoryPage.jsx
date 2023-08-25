@@ -30,7 +30,7 @@ const CategoryPage = () => {
 
   return (
     <div>
-        <PageHeader header={state.categoryName} />
+        <PageHeader header={state.categoryName} links={true} />
         {
           isLoading?
           <div className='py-60'>
