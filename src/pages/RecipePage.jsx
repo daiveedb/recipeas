@@ -14,12 +14,12 @@ const RecipePage = () => {
 
     useEffect(() => {
       // getRecipeInformation()
-      console.log(state);
+      // console.log(state);
     })
   return (
     <div className='py-4'>
       <RecipeHeader state={state}/>
-      <div className='p-10'>
+      <div className='py-10'>
         <RecipeHeroBox state={state}/>   
       </div>
     </div>
