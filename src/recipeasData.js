@@ -124,3 +124,18 @@ export const collections = [
         url:""
     },
 ]
+
+export const basicEquipment = [
+    {
+        id:1,
+        name:"Cooking Pot"
+    },
+    {
+        id:2,
+        name:"Pan"
+    },
+    {
+        id:3,
+        name:"Cooking Utensils"
+    },
+]
